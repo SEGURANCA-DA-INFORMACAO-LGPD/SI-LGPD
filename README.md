@@ -1,6 +1,6 @@
 # SI-LGPD
 
-#FATEC São José dos Campos - Professor Jessen Vidal
+##FATEC São José dos Campos - Professor Jessen Vidal
 
 **Professor:** Eduardo Sakaue
 
@@ -26,6 +26,6 @@ Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuá
 * PostgreSQL
 
 ## Entregas
-**1.	07/09/2020 a 20/09/2020 – Sprint 1:** requisitos, modelagem do banco de dados, arquitetura do frontend, arquitetura do backend.
-**2.	21/09/2020 a 04/10/2020 – Sprint 2:** A definir
-**3.	05/10/2020 a 18/11/2020 – Sprint 3:** A definir
+1.	**07/09/2020 a 20/09/2020 – Sprint 1:** requisitos, modelagem do banco de dados, arquitetura do frontend, arquitetura do backend.
+2.	**21/09/2020 a 04/10/2020 – Sprint 2:** A definir
+3.	**05/10/2020 a 18/11/2020 – Sprint 3:** A definir
