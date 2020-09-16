@@ -3,13 +3,15 @@
 ## Segurança da Informação
 Projeto acadêmico - Segurança da Informação
 FATEC São José dos Campos - Professor Jessen Vidal
-Professor: Eduardo Sakaue
-Equipe
-Pedro Henrique Cerqueira Fernandes (Scrum Master)
-Davi Ramos Andrade
-Eduardo Vinicius Maia
-Luan Matheus Satiro de Oliveira
-Rafael Augusto Campos Plinio
+###Professor: Eduardo Sakaue
+
+| Nome         										|
+|---------------------------------------------------|          
+| Pedro Henrique Cerqueira Fernandes (Scrum Master)	|
+| Davi Ramos Andrade								|
+| Eduardo Vinicius Maia								|
+| Luan Matheus Satiro de Oliveira					|
+| Rafael Augusto Campos Plinio						|
 
 ## Problema
 ### Como proteger o acesso aos dados privados do usuário?
