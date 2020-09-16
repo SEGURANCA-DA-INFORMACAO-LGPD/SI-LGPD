@@ -16,7 +16,7 @@ Rafael Augusto Campos Plinio
 Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuários precisarão ser criptografados no banco de dados, sendo necessária a utilização de alguma tecnologia para a implementação da segurança destes dados.
 ## Solução
 * Utilizar uma chave única para cada usuário para criptografar os dados sensíveis;
-* Armazenar essas chaves em algum lugar para futura consulta;
+* As chaves únicas serão armazenadas na nuvem;
 * A chave será utilizada somente quando houver a necessidade de acessar os dados criptografados.
 
 ## Tecnologias Utilizadas
