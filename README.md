@@ -1,11 +1,10 @@
 # SI-LGPD
 
-## Segurança da Informação
-Projeto acadêmico - Segurança da Informação
-FATEC São José dos Campos - Professor Jessen Vidal
-###Professor: Eduardo Sakaue
+#FATEC São José dos Campos - Professor Jessen Vidal
 
-| Nome         										|
+**Professor:** Eduardo Sakaue
+
+| **Nome**         									|
 |---------------------------------------------------|          
 | Pedro Henrique Cerqueira Fernandes (Scrum Master)	|
 | Davi Ramos Andrade								|
