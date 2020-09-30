@@ -31,5 +31,5 @@ Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuá
 1.	**07/09/2020 a 20/09/2020 – Sprint 1:** requisitos, modelagem do banco de dados, arquitetura do frontend, arquitetura do backend.
 2.	**21/09/2020 a 04/10/2020 – Sprint 2:** Conclusão da coleta dos requisitos, Criação de todos os segredos dos usuarios, Login e Autenticação, Arquitetura do Backend e Criação da Arquitetura do Frontend   
 3.	**05/10/2020 a 18/10/2020 – Sprint 3:** Integração do front com o back e a documentação do projeto
-4.  **19/10/2020 a 01/11/2020 – Sprint 3:** Gravação da apresentação final e revisão do projeto
-5.  **02/11/2020 a 15/11/2020 – Sprint 3:** Conclusão
+4.  **19/10/2020 a 01/11/2020 – Sprint 4:** Gravação da apresentação final e revisão do projeto
+5.  **02/11/2020 a 15/11/2020 – Sprint 5:** Conclusão
