@@ -8,10 +8,12 @@ FATEC São José dos Campos - Professor Jessen Vidal
 
 | **Nome**         									|
 |---------------------------------------------------|          
-| Pedro Henrique Cerqueira Fernandes (Scrum Master)	|
+| Caroline Nunes                    | 
 | Davi Ramos Andrade								|
+| Débora Santos                 |
 | Eduardo Vinicius Maia								|
 | Luan Matheus Satiro de Oliveira					|
+| Pedro Henrique Cerqueira Fernandes (Scrum Master)	|
 | Rafael Augusto Campos Plinio						|
 
 ## Problema
