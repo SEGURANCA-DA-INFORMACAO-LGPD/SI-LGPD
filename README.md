@@ -72,6 +72,7 @@ Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuá
 
 
 ### Sprint 3 :
+* Conclusão da entrga do Frontend
 * Integração do Backend com KMS da Amazon
 * Integração do Frontend com o Backend
 * Documentação do Projeto.
