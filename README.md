@@ -67,7 +67,7 @@ Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuá
 * Login e Autenticação
 * Arquitetura do Backend
 * Criação da Arquitetura do Frontend. 
-* Conclusão da API do Backend
+* Finalização das funcionalidades principais da API do Backend
 * Data: (21/09/2020 a 04/10/2020)
 
 
