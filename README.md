@@ -70,13 +70,14 @@ Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuá
 * Data: (21/09/2020 a 04/10/2020) 
 
 ### Sprint 3 :
+* Integração do Back com KMS da Amazon
 * Integração do Front com o Backend
 * Documentação do Projeto.
 * Data: (05/10/2020 a 18/10/2020)
 
-### Sprint 4 : 
-* Gravação da Apresentação Final
+### Sprint 4 :
 * Revisão do Projeto
+* Gravação da Apresentação Final
 * Data: (19/10/2020 a 01/11/2020)
 
 ### Sprint 5 :
