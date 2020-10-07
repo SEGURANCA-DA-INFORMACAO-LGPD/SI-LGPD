@@ -57,7 +57,7 @@ Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuá
 ### Sprint 1 : 
 * Requisitos
 * Modelagem do Banco de Dados
-* Arquitetura do Frontend
+* Inicio da criação Arquitetura do Frontend
 * Arquitetura do Backend
 * Data: (07/09/2020 a 20/09/2020)
 
