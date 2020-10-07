@@ -63,7 +63,7 @@ Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuá
 
 ### Sprint 2 :
 * Conclusão da coleta dos requisitos
-* Criação de todos os Segredos dos Usuários
+* Criação de todos os Segredos dos Usuários (Chave-simétrica) 
 * Login e Autenticação
 * Arquitetura do Backend
 * Criação da Arquitetura do Frontend. 
