@@ -72,17 +72,31 @@ Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuá
 
 
 ### Sprint 3 :
-* Conclusão da entrega do Frontend
-* Integração do Backend com KMS da Amazon
-* Integração do Frontend com o Backend
+* Integração do Backend com Secret Manager da Amazon
 * Documentação do Projeto.
 * Data: (05/10/2020 a 18/10/2020)
 
 ### Sprint 4 :
-* Revisão do Projeto
-* Gravação da Apresentação Final
-* Data: (19/10/2020 a 01/11/2020)
+* Deploy do Front
+* Remoção dos Usuários
+* Documentação dos fluxos de Segurança
+* Documentação dos requisitos do Front
+* Documentação dos requisitos do Back
+* Conclusão das configurações com a AWS
+* Diagramação UML
 
 ### Sprint 5 :
+* Ajustes Finais no Front
+* Integração do Frontend com o Backend
+* Revisão do Projeto
+* Data: (19/10/2020 a 01/11/2020)
+
+### Sprint 6 :
+* Gravação da Apresentação Final
 * Conclusão
-* Data: (02/11/2020 a 15/11/2020)
+* Data: (16/11/2020 a 29/11/2020)
+
+### Apresentação Final :
+* Data: (30/11/2020 a 06/12/2020)
+
+
