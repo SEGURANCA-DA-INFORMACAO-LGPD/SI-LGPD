@@ -90,7 +90,7 @@ Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuá
 * Documentação dos fluxos de Segurança
 * Documentação dos requisitos do Front
 * Documentação dos requisitos do Back
-* Data: (2/10/2020 a 15/11/2020)
+* Data: (2/11/2020 a 15/11/2020)
 
 ### Sprint 6 :
 * Revisão do Projeto
