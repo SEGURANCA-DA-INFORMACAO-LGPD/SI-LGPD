@@ -108,12 +108,12 @@ Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuá
 * Configurações com a AWS Segredos
 * Ajustes Finais no Front
 * Remoção dos Usuários
-* Documentação dos fluxos de Segurança
 * Documentação dos requisitos do Front
-* Documentação dos requisitos do Back
 * Data: (2/11/2020 a 15/11/2020)
 
 ### Sprint 6 :
+* Documentação dos fluxos de Segurança
+* Documentação dos requisitos do Back
 * Revisão do Projeto
 * Gravação da Apresentação Final
 * Conclusão
