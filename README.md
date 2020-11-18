@@ -52,25 +52,26 @@ Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuá
 </p>
 
   Para conhecer os pré-requisitos e tecnologias gerais do Saka Vault, <a href="https://github.com/SEGURANCA-DA-INFORMACAO-LGPD/SI-LGPD/wiki">visite a nossa wiki.</a>
-##Criando a conta
+  
+## Criando a conta
 ![](gifs/criandoConta.gif)
 
-##Efetuando o login
+## Efetuando o login
 ![](gifs/efetuandoLogin.gif)
 
-##Adicionando o segredo
+## Adicionando o segredo
 ![](gifs/adicionandoSegredo.gif)
 
-##Editando o segredo
+## Editando o segredo
 ![](gifs/editarSegredo.gif)
 
-##Deletando o segredo
+## Deletando o segredo
 ![](gifs/deletandoSegredo.gif)
 
-##Deslogando o login
+## Deslogando o login
 ![](gifs/deslogando.gif)
 
-##Deletando a conta
+## Deletando a conta
 ![](gifs/deletandoConta.gif)
 
 ## Entregas
