@@ -60,7 +60,7 @@ Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuá
 ![](gifs/efetuandoLogin.gif)
 
 ## Adicionando o segredo
-![](gifs/adicionandoSegredo.gif)
+![](gifs/criandoSegredo.gif)
 
 ## Editando o segredo
 ![](gifs/editarSegredo.gif)
