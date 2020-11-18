@@ -53,6 +53,8 @@ Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuá
 
   Para conhecer os pré-requisitos e tecnologias gerais do Saka Vault, <a href="https://github.com/SEGURANCA-DA-INFORMACAO-LGPD/SI-LGPD/wiki">visite a nossa wiki.</a>
 
+![](gifs/criandoConta.gif)
+
 ## Entregas
 ### Sprint 1 : 
 * Requisitos
