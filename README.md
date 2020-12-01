@@ -54,6 +54,18 @@ Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuá
 </p>
 
   Para conhecer os pré-requisitos e tecnologias gerais do Saka Vault, <a href="https://github.com/SEGURANCA-DA-INFORMACAO-LGPD/SI-LGPD/wiki">visite a nossa wiki.</a>
+  
+## Overview técnico
+
+Nós não estamos "reinventando a criptografia" ou usando o "nosso algoritmo", todos nós sabemos que isso é uma "péssima idéia": https://security.stackexchange.com/questions/18197/why-shouldnt-we-roll-our-own
+Nós estamos seguindo o padrão da indústria que foi amplamente testado na prática. Estamos usando:
+
+- Advanced Encryption Standard (AES) para criptografar dados sensíveis.
+    - **Galois/Counter** Mode para criptografia de chave simétrica: https://en.wikipedia.org/wiki/Galois/Counter_Mode recomendada por diversos experts de segurança e criptografia, incluindo Matthew Green, Niels Ferguson e Bruce Schneier
+    - "Por baixo dos panos" estamos usando a bibliotecta crypto do Erlang, especificamente AES com chaves de **256 bits** (a mesma usada nos serviços AWS/Google KMS), veja: http://erlang.org/doc/man/crypto.html#block_encrypt-4
+-  "Hashing" de senhas usando **Argon2** (key derivation function / KDF): https://en.wikipedia.org/wiki/Argon2, especificamente a implementação em Elixir do Argon2 escrita por David Whitlock: https://github.com/riverrun/argon2_elixir que por sua vez usa a referência da implementação em C como um "submodule do Git".
+ 
+ 
  
 ## Entregas
 ### Sprint 1 : 
