@@ -7,7 +7,12 @@
   <a href="#problema">Problema</a> |
   <a href="#solução">Solução</a> |
   <a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a> |
-  <a href="#entregas">Entregas</a>
+  <a href="#overview-técnico">Tech Overview</a> |
+  <a href="#metodologia-owasp">Owasp</a> |
+  <a href="#modelo-de-dados">Modelo de Dados</a> |
+  <a href="#chaves-externas-de-criptografia">Chaves Externas</a> |
+  <a href="#entregas">Entregas</a> |
+  <a href="#saiba-mais">Saiba mais</a>
 </p>
 
 ##
@@ -32,6 +37,7 @@ O SakaVault é um gerenciador de senhas e ele permite o armazenamento de nomes d
 ## Problema
 ### Como proteger o acesso aos dados privados do usuário? :closed_lock_with_key:
 Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuários precisarão ser criptografados no banco de dados, sendo necessária a utilização de alguma tecnologia para a implementação da segurança destes dados.
+
 ## Solução
 * Utilizar uma chave única e simétrica para cada usuário para criptografar (AES) os dados sensíveis;
 * As chaves únicas serão armazenadas na nuvem;
@@ -61,11 +67,64 @@ Nós não estamos "reinventando a criptografia" ou usando o "nosso algoritmo", t
 Nós estamos seguindo o padrão da indústria que foi amplamente testado na prática. Estamos usando:
 
 - Advanced Encryption Standard (AES) para criptografar dados sensíveis.
-    - **Galois/Counter** Mode para criptografia de chave simétrica: https://en.wikipedia.org/wiki/Galois/Counter_Mode recomendada por diversos experts de segurança e criptografia, incluindo Matthew Green, Niels Ferguson e Bruce Schneier
-    - "Por baixo dos panos" estamos usando a bibliotecta crypto do Erlang, especificamente AES com chaves de **256 bits** (a mesma usada nos serviços AWS/Google KMS), veja: http://erlang.org/doc/man/crypto.html#block_encrypt-4
--  "Hashing" de senhas usando **Argon2** (key derivation function / KDF): https://en.wikipedia.org/wiki/Argon2, especificamente a implementação em Elixir do Argon2 escrita por David Whitlock: https://github.com/riverrun/argon2_elixir que por sua vez usa a referência da implementação em C como um "submodule do Git".
+    - <a href="https://en.wikipedia.org/wiki/Galois/Counter_Mode"> **Galois/CounterMode** </a> para criptografia de chave simétrica recomendada por diversos experts de segurança e criptografia, incluindo Matthew Green, Niels Ferguson e Bruce Schneier
+    - "Por baixo dos panos" estamos usando a bibliotecta crypto do Erlang, especificamente AES com chaves de **256 bits** (a mesma usada nos serviços AWS/Google KMS), <a href="http://erlang.org/doc/man/crypto.html#block_encrypt-4"> veja </a>.
+-  "Hashing" de senhas usando <a href="https://en.wikipedia.org/wiki/Argon2"> **Argon2** </a> (key derivation function / KDF), especificamente a implementação em Elixir do Argon2 escrita por <a href="https://github.com/riverrun/argon2_elixir">David Whitlock</a>, que por sua vez usa a referência da implementação em C como um "submodule do Git".
  
- 
+ ## Metodologia OWASP
+Este projeto segue as diretrizes e metodologias da Open Web Application Security Project (OWASP) para senhas e criptografia. <a href="https://github.com/SEGURANCA-DA-INFORMACAO-LGPD/SI-LGPD/blob/master/metodologiaoasp.md">Clique aqui </a>para saber mais.
+
+## Modelo de dados 
+#### User
+
+```elixir
+schema :users do
+  field :name, :binary
+  field :email, :binary
+
+  field :email_hash, :binary
+  field :password_hash, :binary
+end
+```
+
+Os campos `nome` e `email` são criptografados no banco de dados usando o módulo <a href="https://github.com/SEGURANCA-DA-INFORMACAO-LGPD/SI-LGPD/blob/master/kriptoeaes.md">Krypto e AES</a>, que veremos a seguir. Já os campos `email_hash` e `password_hash` são guardados em formato de hash.
+
+- `password_hash` é o hash da senha do usuário usando Argon2
+- `email_hash` é o hash do e-mail do usuário, assim conseguimos fazer um "lookup" para que este consiga fazer login sem comprometer a segurança dos dados
+
+#### Secret
+
+```elixir
+schema "secrets" do
+  field :user_id, :uuid
+  
+  field :name, :binary
+  field :notes, :binary
+  field :username, :binary
+  field :password, :binary
+end
+
+```
+:bulb: **Para a explicação completa** do modelo de dados, <a href="https://github.com/SEGURANCA-DA-INFORMACAO-LGPD/SI-LGPD/blob/master/modelodedados.md"> acesse este link.</a>
+
+## Chaves externas de criptografia
+
+As chaves de criptografia são armazenadas no serviço [AWS Secrets Manager](https://aws.amazon.com/secrets-manager). Elas são criadas para cada usuário, para que sua chave de criptografia esteja completamente segura.
+
+Para identificar as chaves de cada usuário no AWS Secrets Manager, também chamados de `secret_id`, criamos uma chave única de identificação usando `email_hash + password_hash`, que são indecifráveis. Também *temperamos* este novo hash com a chave de 64 caracteres da aplicação, também chamada de `secret key base`. Após esse processo, aplicamos a função de codificar essa chave em `base16`:
+
+```
+399C7E909CB5650DC39824B5D953710E17D9F175B88C3A8171B95EACE3BE906A
+```
+
+Para criar as chaves de criptografia, usamos o `secret_id` junto de um *salt* aleatório da biblioteca Argon2 e fazemos o *salt* disso tudo usando o mesmo `secret key base` da aplicação. Após esse processo, aplicamos a função de codificar essa chave em `base64`:
+
+```
+4SXtCiIPBgRSHukhA/+a2PiO3WMfPTsX+30bU8revNM=
+```
+ ## Saiba mais
+ :bellhop_bell: Links úteis, FAQ e Leitura:
+ * Acesse <a href="https://github.com/SEGURANCA-DA-INFORMACAO-LGPD/SI-LGPD/blob/master/moreinfo.md"> aqui </a> para saber mais.
  
 ## Entregas
 ### Sprint 1 : 
