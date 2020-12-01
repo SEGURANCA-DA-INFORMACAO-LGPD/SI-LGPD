@@ -59,6 +59,15 @@ Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuá
   <img alt="PostgreSQL" src="https://user-images.githubusercontent.com/45819790/95104283-0502be80-070c-11eb-8368-6b479d142327.png" height="30px" style="max-width:100%;"> </a> PostgreSQL                                                                                                                                          
 </p>
 
+* <p>
+  <a href="https://react-cn.github.io/react/downloads.html">
+  <img alt="React" src="https://user-images.githubusercontent.com/45819790/100808607-34cff900-3413-11eb-8b1f-067825b60738.png" height="30px" style="max-width:100%;"> </a> React
+
+* <p>
+  <a href="https://nodejs.org/en/">
+  <img alt="React" src="https://user-images.githubusercontent.com/45819790/100808616-37cae980-3413-11eb-8da8-7eb868f5bd79.png" height="30px" style="max-width:100%;"> </a> NodeJS                                                                                                                                      
+</p>
+
   Para conhecer os pré-requisitos e tecnologias gerais do Saka Vault, <a href="https://github.com/SEGURANCA-DA-INFORMACAO-LGPD/SI-LGPD/wiki">visite a nossa wiki.</a>
   
 ## Overview técnico
