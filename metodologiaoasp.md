@@ -6,7 +6,6 @@
    - [x] Somente usar algoritmos tipo **SHA-256** publicamente aprovados ou melhor para hashing;
    - [x] Argon2 é o vencedor da competição de hashing e deve ser sua primeira escolha para novas aplicações.
    
-Veja:
-
-https://www.owasp.org/index.php/Cryptographic_Storage_Cheat_Sheet
-https://www.owasp.org/index.php/Password_Storage_Cheat_Sheet
+Veja: 
+* https://www.owasp.org/index.php/Cryptographic_Storage_Cheat_Sheet
+* https://www.owasp.org/index.php/Password_Storage_Cheat_Sheet
