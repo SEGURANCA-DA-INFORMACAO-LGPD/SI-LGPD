@@ -15,6 +15,8 @@ FATEC São José dos Campos - Professor Jessen Vidal
 
 **Professor:** Eduardo Sakaue
 
+O SakaVault é um gerenciador de senhas e ele permite que você armazene nomes de usuário e senhas das suas contas online em um local seguro. Ao usar um gerenciador de senhas, você pode usar uma senha exclusiva e complexa para cada uma das suas contas online, sem precisar se lembrar de todas elas.  
+
 ## Equipe: 
 
 | **INTEGRANTES**         									|
@@ -31,7 +33,7 @@ FATEC São José dos Campos - Professor Jessen Vidal
 ### Como proteger o acesso aos dados privados do usuário? :closed_lock_with_key:
 Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuários precisarão ser criptografados no banco de dados, sendo necessária a utilização de alguma tecnologia para a implementação da segurança destes dados.
 ## Solução
-* Utilizar uma chave única para cada usuário para criptografar os dados sensíveis;
+* Utilizar uma chave única e simétrica para cada usuário para criptografar (AES) os dados sensíveis;
 * As chaves únicas serão armazenadas na nuvem;
 * A chave será utilizada somente quando houver a necessidade de acessar os dados criptografados.
 
