@@ -15,7 +15,7 @@ FATEC São José dos Campos - Professor Jessen Vidal
 
 **Professor:** Eduardo Sakaue
 
-O SakaVault é um gerenciador de senhas e ele permite que você armazene nomes de usuário e senhas das suas contas online em um local seguro. Ao usar um gerenciador de senhas, você pode usar uma senha exclusiva e complexa para cada uma das suas contas online, sem precisar se lembrar de todas elas.  
+O SakaVault é um gerenciador de senhas e ele permite o armazenamento de nomes de usuário e senhas das suas contas online em um local seguro. Ao usar um gerenciador de senhas, você pode usar uma senha exclusiva e complexa para cada uma das suas contas online, sem precisar se lembrar de todas elas.  
 
 ## Equipe: 
 
