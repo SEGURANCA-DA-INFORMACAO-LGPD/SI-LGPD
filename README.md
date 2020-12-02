@@ -43,11 +43,21 @@ Com a nova LGPD, prevista para 03 de maio de 2021, os dados sensíveis dos usuá
 * As chaves únicas serão armazenadas na nuvem;
 * A chave será utilizada somente quando houver a necessidade de acessar os dados criptografados.
 
+A imagem abaixo ilustra o fluxo da <a href="https://sakavault.netlify.app">aplicação</a>:
+<p align="left">
+  <img src="https://user-images.githubusercontent.com/45819790/100869791-4ef1f180-347c-11eb-8695-9a99f20dad30.png" alt="Fluxograma" height="400px" style=max-width:100%>
+
+**Na ida :arrow_right:**: o usuário cadastra um segredo, A API recebe os dados do front, processa, criptografa e salva no BD, na primeira vez, é gerada uma chave e qual é armazenada na AWS. 
+* Caso o usuário edite sua senha na aplicação, a chave da AWS permanece a mesma. Não rotacionamos as chaves do usuário.
+
+**Na volta :back::** Nós geramos um hash MD5 sobre algumas informações do usuário pra buscar o key/secret na AWS e com isso descriptografar os dados dele do banco, a retornando então, a informação para o usuário através do frontend.
+</p>
+
 ## Tecnologias Utilizadas
 * <p>
   <a href="https://elixir-lang.org">
   <img alt="Elixir" src="https://user-images.githubusercontent.com/45819790/95101838-067eb780-0709-11eb-91c8-5ffde324230a.png" height="30px" style="max-width:100%;"> </a> Elixir                                                                                                                                           
-</p>
+
 
 * <p>
   <a href="https://www.docker.com">
