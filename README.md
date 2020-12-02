@@ -132,8 +132,9 @@ Para criar as chaves de criptografia, usamos o `secret_id` junto de um *salt* al
 4SXtCiIPBgRSHukhA/+a2PiO3WMfPTsX+30bU8revNM=
 ```
  ## Saiba mais
- :bellhop_bell: Links úteis, FAQ e Leitura:
- * Acesse <a href="https://github.com/SEGURANCA-DA-INFORMACAO-LGPD/SI-LGPD/blob/master/moreinfo.md"> aqui </a> para saber mais.
+  #### :bellhop_bell: Links úteis, FAQ e Leitura:
+ Acesse <a href="https://github.com/SEGURANCA-DA-INFORMACAO-LGPD/SI-LGPD/blob/master/moreinfo.md"> aqui </a> para saber mais.
+
  
 ## Entregas
 ### Sprint 1 : 
